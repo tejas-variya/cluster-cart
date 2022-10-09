@@ -10,11 +10,11 @@ export const menu: CoreMenu[] = [
     url: 'home'
   },
   {
-    id: 'sample',
-    title: 'Sample',
+    id: 'changeDetection',
+    title: 'Change detection',
     translate: 'MENU.SAMPLE',
     type: 'item',
-    icon: 'file',
-    url: 'sample'
+    icon: 'dribbble',
+    url: 'change-detection'
   }
 ]

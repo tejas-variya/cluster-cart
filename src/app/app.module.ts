@@ -26,8 +26,12 @@ const appRoutes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/sample',
     pathMatch: 'full'
+  },
+  {
+    path:'change-detection',
+    loadChildren:()=>import('./main/change-detection/change-detection.module').then(m=>m.ChangeDetectionModule)
   },
   {
     path: '**',

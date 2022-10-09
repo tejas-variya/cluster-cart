@@ -1,2 +1,9 @@
 @import '@core/scss/core.scss';
 @import './assets/scss/styles';
+
+.change-detection-card{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
