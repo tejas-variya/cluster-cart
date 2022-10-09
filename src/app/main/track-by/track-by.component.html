@@ -1,0 +1,27 @@
+<div class="container-fluid d-flex flex-wrap">
+  <ng-container *ngFor="let post of posts; let i = index">
+    <div class="card m-2 post-card">
+      <div class="card-body">
+        <span class="d-flex justify-content-between">
+          <h4 class="card-title">{{ post.title }}</h4>
+          <span>
+            <span style="cursor: pointer" (click)="updatePost(i)">
+              update
+            </span>
+            <span style="cursor: pointer" (click)="deletePost(i)">
+              delete
+            </span>
+          </span>
+        </span>
+        <div class="card-subtitle text-muted mb-1">
+          User Id : {{ post.userId }} | Post Id : {{ post.id }}
+        </div>
+        <p class="card-text">
+          {{ post.body }}
+        </p>
+        <!-- <a href="javascript:void(0)" class="card-link">Card link</a>
+          <a href="javascript:void(0)" class="card-link">Another link</a> -->
+      </div>
+    </div>
+  </ng-container>
+</div>
