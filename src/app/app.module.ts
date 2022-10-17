@@ -34,6 +34,10 @@ const appRoutes: Routes = [
     loadChildren:()=>import('./main/change-detection/change-detection.module').then(m=>m.ChangeDetectionModule)
   },
   {
+    path:'track-by',
+    loadChildren:()=>import('./main/track-by/track-by.module').then(m=>m.TrackByModule)
+  },
+  {
     path: '**',
     redirectTo: '/pages/miscellaneous/error' //Error 404 - Page not found
   }
@@ -44,6 +48,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes, {
       scrollPositionRestoration: 'enabled', // Add options right here

@@ -16,5 +16,13 @@ export const menu: CoreMenu[] = [
     type: 'item',
     icon: 'dribbble',
     url: 'change-detection'
+  },
+  {
+    id: 'trackby',
+    title: 'Track by',
+    translate: 'MENU.SAMPLE',
+    type: 'item',
+    icon: 'activity',
+    url: 'track-by'
   }
 ]
